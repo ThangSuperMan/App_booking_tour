@@ -1,4 +1,34 @@
 .navbar {
+  position: relative;
+}
+
+.navbar button {
+  background-color: none;
+  border: none;
+  outline: none;
+}
+
+.navbar__right > .right__button {
+  padding: 12px;
+  border-radius: 22px;
+  background-color: transparent; 
+  transition: background-color 0.2s ease-in-out 0s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar__right > .right__button:hover {
+  background-color: var(--gray_button_color);
+}
+
+.right__button-circle {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
   height: 80px;
   padding-inline: 40px;
   display: flex;
@@ -15,6 +45,17 @@
   border-radius: 32px;
   padding: 8px;
   border: 1px solid var(--gray_border_color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.1s ease-in;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar__middle:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .middle__features {
@@ -24,9 +65,7 @@
 
 .middle__features > button {
   font-weight: 600;
-  border: none;
   font-size: 14px;
-  outline: none;
   cursor: pointer;
   background-color: transparent;
   padding-inline: 16px;
@@ -43,6 +82,10 @@
   right: 0;
   position: absolute;
 } 
+.middle__features > button:last-child {
+  color: var(--gray_text_color);
+  font-weight: 500;
+}
 
 .search__icon {
   background: var(--primary_color);
@@ -60,3 +103,91 @@
   -webkit-text-stroke: 20px black;
 }
 
+.navbar__expand {
+  height: 80px;
+  background-color: red;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.right__profile {
+  position: relative;
+}
+
+.right__profile > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px 5px 12px;
+  transition: box-shadow 0.2s ease-in 0s;
+  background-color: transparent;
+  border: 1px solid var(--gray_border_color);
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.right__profile .profile__icon{
+  color: var(--gray_text_color);
+  margin-left: 8px;
+}
+
+.right__profile .profile__icon {
+  margin-left: 12px;
+  border-radius: 999px;
+  color: var(--gray_text_color);
+  background-color: transparent;
+}
+
+.right__profile > button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+              rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.profile__dropdown {
+  width: 240px;
+  border: 1px solid var(--gray_border_color);
+  padding-block: 8px;
+  top: calc(100% + 10px);
+  right: 0;
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown__list {
+  list-style-type: none;
+}
+
+.dropdown__list .list__item {
+  padding-inline: 14px;
+  padding-block: 8px;
+  transition: all 0.1s linear;
+}
+
+.dropdown__list .list__item:hover {
+  background-color: var(--gray_border_color);
+}
+
+.dropdown__list .list__item:first-child button {
+  font-weight: bold;
+}
+
+.dropdown__list .list__item button {
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.dropdown__sep {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_border_color);
+  padding-inline: 14px;
+}
+
+.list__item-nohighlight {
+  font-weight: normal;
+}

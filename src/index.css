@@ -2,8 +2,9 @@
 
 :root {
   --primary_color: #ff385c;
-  /* --gray_border_color: #ebebeb; */
   --gray_border_color: #dddddd;
+  --gray_text_color: #aaaaaa;
+  --gray_button_color: #f7f7f7;
 }
 
 * {

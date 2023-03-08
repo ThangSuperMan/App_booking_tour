@@ -1,12 +1,12 @@
-import React from "react";
-import { Navbar } from "./components";
+import React from "react"
+import { Navbar } from "./components"
 
 const Home: React.FC = () => {
   return (
-    <div className="homepage">
+    <div className="home">
       <Navbar />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
