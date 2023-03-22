@@ -150,12 +150,13 @@
   width: 240px;
   border: 1px solid var(--gray_border_color);
   padding-block: 8px;
-  top: calc(100% + 10px);
-  right: 0;
-  position: absolute;
   background-color: white;
   border-radius: 12px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 1000;
+  position: absolute;
 }
 
 .dropdown__list {

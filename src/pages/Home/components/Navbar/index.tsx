@@ -40,7 +40,6 @@ const Navbar: React.FC = () => {
   }
 
   const handleOpenProfileMenu = () => {
-    console.log("handleOpenProfileMenu")
     setIsShowDropdown((prev) => !prev)
   }
 
