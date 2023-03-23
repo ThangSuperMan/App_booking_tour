@@ -7,6 +7,7 @@
   --gray_text_color: #AAAAAA;
   --gray_button_color: #F7F7F7;
   --black_active_category_color: #000000;
+  --navbar_height: 80px;
 }
 
 * {

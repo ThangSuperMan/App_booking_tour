@@ -9,7 +9,7 @@ const DropdownMenu: React.FC = () => {
   return (
     <div className="profile__dropdown">
       <ul className="dropdown__list">
-        <li className="list__item">
+        <li className="list__item list__item-highlight">
           <button>Đăng ký</button>
         </li>
         <li className="list__item">
@@ -18,7 +18,7 @@ const DropdownMenu: React.FC = () => {
       </ul>
       <div className="dropdown__sep"></div>
       <ul className="dropdown__list">
-        <li className="list__item list__item-nohighlight">
+        <li className="list__item ">
           <button>Cho thuê chỗ ở qua Airbnb</button>
         </li>
         <li className="list__item">
@@ -34,6 +34,8 @@ const DropdownMenu: React.FC = () => {
 
 const Navbar: React.FC = () => {
   const [isShowDropdown, setIsShowDropdown] = React.useState<boolean>(false)
+  const [isShowPopupSearchFeature, setIsShowPopupSearchFeature] =
+    React.useState<boolean>(false)
 
   const handleOnClickButtonAnyLocation = () => {
     setIsShowDropdown((prev) => !prev)
@@ -43,12 +45,19 @@ const Navbar: React.FC = () => {
     setIsShowDropdown((prev) => !prev)
   }
 
+  const handleDisplaySearchFeature = () => {
+    console.log("handleDisplaySearchFeature")
+    setIsShowPopupSearchFeature((prev) => !prev)
+  }
+
   return (
-    <nav className="navbar">
+    <nav
+      className={isShowPopupSearchFeature ? "navbar navbar-external" : "navbar"}
+    >
       <div className="navbar__left">
         <Logo />
       </div>
-      <div className="navbar__middle">
+      <div onClick={handleDisplaySearchFeature} className="navbar__middle">
         <div className="middle__features">
           <button onClick={handleOnClickButtonAnyLocation}>
             Địa điểm bất kỳ

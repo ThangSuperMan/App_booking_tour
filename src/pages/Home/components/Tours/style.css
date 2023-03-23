@@ -56,3 +56,13 @@
   color: #717171;
   font-weight: 300
 }
+
+.tour-content__price {
+  margin-top: 6px;
+}
+
+.tour-content__price > span {
+  margin-left: 4px;
+  color: #717171;
+  font-weight: 300;
+}

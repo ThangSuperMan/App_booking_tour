@@ -1,11 +1,41 @@
-.navbar {
-  position: relative;
-}
-
 .navbar button {
   background-color: none;
   border: none;
   outline: none;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding-inline: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray_border_color);
+  border-color: var(--gray_border_color);
+  background: #FFFFFF;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar.navbar-external ::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: red;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+} 
+
+.navbar-external {
+  transition: all 0.3s linear;
+  height: 160px !important;
+  background: red;
 }
 
 .navbar__right > .right__button {
@@ -26,16 +56,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.navbar {
-  height: 80px;
-  padding-inline: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--gray_border_color);
-  border-color: var(--gray_border_color);
 }
 
 .navbar__middle {
@@ -82,6 +102,7 @@
   right: 0;
   position: absolute;
 } 
+
 .middle__features > button:last-child {
   color: var(--gray_text_color);
   font-weight: 500;
@@ -173,10 +194,6 @@
   background-color: var(--gray_border_color);
 }
 
-.dropdown__list .list__item:first-child button {
-  font-weight: bold;
-}
-
 .dropdown__list .list__item button {
   font-size: 14px;
   background-color: transparent;
@@ -189,6 +206,6 @@
   padding-inline: 14px;
 }
 
-.list__item-nohighlight {
-  font-weight: normal;
+.list__item-highlight {
+  font-weight: bold;
 }
