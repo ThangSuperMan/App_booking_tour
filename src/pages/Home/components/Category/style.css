@@ -2,13 +2,14 @@
   display: flex;
   gap: 30px;
   padding-inline: 40px;
-  /* margin-top: calc(var(--navbar_height) + 20px); */
-  margin-top: var(--navbar_height);
+  /* margin-top: 20px; */
+  margin-top: calc(var(--navbar_height) + 20px);
+  /* margin-top: var(--navbar_height); */
   background-color: #FFFFFF;
   right: 0;
   left: 0;
-  position: fixed;
-  z-index: 100;
+  /* position: fixed; */
+  /* z-index: 100; */
 }
 
 .category__item {
