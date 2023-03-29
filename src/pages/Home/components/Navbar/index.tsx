@@ -1,19 +1,20 @@
-import React from "react"
+import React, { Component } from "react"
 // @ts-ignore
 import { Logo, EarthIcon, HumburgerIcon, ProfileIcon } from "#components"
 // @ts-ignore
 import { SearchIcon } from "#components"
+import { Link } from "react-router-dom"
 import "./style.css"
 
 const DropdownMenu: React.FC = () => {
   return (
     <div className="profile__dropdown">
       <ul className="dropdown__list">
-        <li className="list__item list__item-highlight">
-          <button>Đăng ký</button>
+        <li className="list__item">
+          <Link className="list-link" to="/login">Đăng nhập</Link>
         </li>
         <li className="list__item">
-          <button>Đăng nhập</button>
+          <Link className="list-link" to="/signup">Đăng ký</Link>
         </li>
       </ul>
       <div className="dropdown__sep"></div>

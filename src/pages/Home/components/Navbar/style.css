@@ -209,3 +209,10 @@
 .list__item-highlight {
   font-weight: bold;
 }
+
+.list-link{
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: light;
+}
