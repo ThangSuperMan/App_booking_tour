@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary_color);
+}
+
+.btn-primary {
+    background-color: var(--primary_color);
+    border-color: var(--primary_color);
+}
+
+.btn-primary:hover {
+    background-color: #e92f52;
+    border-color: #e92f52;
+}
+
+.form-control:focus {
+    border-color: var(--primary_color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 56, 92, 0.25);
+}
+
+.seat {
+    width: 20px;
+    height: 20px;
+    background-color: #28a745;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.seat:hover {
+    transform: scale(1.2);
+}
+
+.seat-booked {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.seat-selected {
+    background-color: #ffc107;
+}
+
+.destination-image {
+    max-width: 100%;
+    height: auto;
+}
+/* Style cho phần slider */
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin-top: -25px;
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon:before {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 8 8%22%3E%3Cpath fill=%22%23fff%22 d=%22M5.25 0l-.19.156-3.875 3.97L.25 4l1.94 1.874 3.875 3.97.19.156H5.5V7H5l-.156-.188L1.22 3.938.906 3.53.938 3.47 1.22 3.063 5 0h.25v-.031z%22/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon:before {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 8 8%22%3E%3Cpath fill=%22%23fff%22 d=%22M2.75 0l-.19.156-1.94 1.874L0 2l1.22 1.062 1.94 1.874.19.156H2.5v.5H3l-.156.188L5.78 4.062l.313-.407-.032-.062-.188-.125L3 2.5h-.5v-.5h.25z%22/%3E%3C/svg%3E');
+}
