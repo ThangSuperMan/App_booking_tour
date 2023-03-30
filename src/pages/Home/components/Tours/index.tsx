@@ -2,6 +2,7 @@ import React from "react"
 // @ts-ignore
 import { HeartIcon, StarIcon } from "#components"
 import "./style.css"
+import {Link} from "react-router-dom"
 
 const Tours: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Tours: React.FC = () => {
         </div>
         <div className="tour-content">
           <div className="tour-content__title">
-            <span>Balian Beach, Indonesia</span>
+            <Link to="/tourdetail">Balian Beach, Indonesia</Link>
             <div className="rating">
               <StarIcon />
               <span>4.84</span>
