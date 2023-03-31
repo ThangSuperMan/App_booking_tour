@@ -1,3 +1,5 @@
+
+
 .signup-signup-page{
     font-weight: 600;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -108,6 +110,11 @@
                     background-color: #fff;
                     margin: 10px;
 
+                    .icon{
+                        margin-top: 4px;
+                        height: 26px;
+                        width: 26px;
+                    }
                 }
             }
             .question2{
