@@ -78,6 +78,7 @@
                     font-weight: 100;
                 }
                 .btn-aircover{
+                    background-color: white;
                     margin-top: 6px;
                     border: none;
                     font-weight: bold;
@@ -118,6 +119,8 @@
                     .paragraph{
                         font-weight: 100;
                         font-size: 20px;
+                        color: black;
+                        pointer-events: none;
                     }
                     .book-tour{
                         margin-top: 20px;
@@ -143,6 +146,8 @@
                             }                            
                         }
                         .customer{
+                            margin-bottom: 20px;
+                            
                             .frame-customer{
                                 width: 100%;
                                 flex-direction: column;
@@ -158,6 +163,21 @@
                             }
                         }
                     }
+                    .btn-aircover{
+                        background-color: white;
+                        margin-top: 6px;
+                        border: none;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-bottom: 1px solid black;
+                        margin-bottom: 20px;
+                        transition: ease 0.5s;
+                    }
+                    .btn-aircover:hover{
+                        color: #FF385C;
+                        border-bottom: 1px solid #FF385C;
+                        transition: ease 0.5s;
+                    }
                     .btn-bookroom{
                         font-weight: bold;
                         margin-top: 20px;
@@ -168,11 +188,13 @@
                         border: 1px solid #FF385C;
                         font-size: 20px;
                         color: white;
+                        transition: ease 0.5s
                     }
                     .btn-bookroom:hover{
-                        background-color: #fca3b3;
+                        background-color: white;
                         color: #FF385C;
                         border: 1px solid #fca3b3;
+                        transition: ease 0.5s
                     }
                 }
             }

@@ -7,6 +7,7 @@ import Login from "./pages/Home/components/Navbar/Login/login.js"
 import { Layout } from "#components"
 import Signup from "./pages/Home/components/Navbar/SignUp/signup"
 import TourDetail from "./pages/Home/components/Tours/TourDetail/tourdetail"
+import DenyTour from "./pages/DenyTour/denytour"
 
 interface RouteProps {
   path: string
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           })}
           // <Route path="/signup" element={<Signup />} />; //{" "}
           <Route path="/tourdetail" element={<TourDetail />} />;
+          <Route path="/denytour" element={<DenyTour />} />;
         </Routes>
       </Layout>
     </BrowserRouter>

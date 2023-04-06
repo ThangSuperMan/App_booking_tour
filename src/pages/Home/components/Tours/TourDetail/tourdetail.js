@@ -7,10 +7,14 @@ class TourDetail extends React.Component{
         showAircover: false,
     }
 
+
     handleShowHide = () => {
         this.setState({
             showAircover: !this.state.showAircover
         })
+    }
+    handleClickBookRoom = () => {
+        alert(`Bạn đã đặt thành công`)
     }
 
     render(){
@@ -39,8 +43,7 @@ class TourDetail extends React.Component{
                             <div className="tour-title4"><a className="color-red">Air</a>cover</div>
                             <p className="paragraph">Mọi đặt phòng đều được bảo vệ miễn phí trong trường hợp chủ nhà hủy, thông tin nhà/phòng cho thuê không chính xác và những vấn đề khác như sự cố trong quá trình nhận phòng</p>
                             <div>
-                                {showAircover === false && <button className="btn-aircover" onClick={() => this.handleShowHide()}>Tìm hiểu thêm</button>}
-                                {showAircover &&
+                                
                                     <div className="btn-hide">
                                         <div className="frame-aricover">
                                             <p className="title-children">Bảo vệ việc đặt phòng</p>
@@ -58,9 +61,8 @@ class TourDetail extends React.Component{
                                             <p className="title-children">Đường dây an toàn 24 giờ</p>
                                             <p className="paragraph">Nếu cảm thấy không an toàn, bạn sẽ được ưu tiên liên hệ với nhân viên hỗ trợ an toàn được đào tạo đặc biệt của chúng tôi, bất kể ngày đêm.</p>
                                         </div>
-                                        <button className="btn-aircover" onClick={() => this.handleShowHide()}>Ẩn bớt</button>
                                     </div>
-                                }
+                                
                             </div>
                             <hr className="hr"/>
                             <div className="tour-title4"><a className="color-red">Giới </a>thiệu về chỗ ở này</div>
@@ -87,7 +89,27 @@ class TourDetail extends React.Component{
                                         </div>
                                     </div>
                                 </div>
-                                <button className="btn-bookroom">
+                                <div>
+                                    {showAircover === false && <button className="btn-aircover" onClick={() => this.handleShowHide()}>Xem tình trạng tour</button>}
+                                    {showAircover &&
+                                        <div className="btn-hide">
+                                            <div className="frame-aricover">
+                                                <p className="title-children">H ướng dẫn viên: Nguyễn Thị Ngọc Duyên (20 tuổi)</p>
+                                            </div>
+                                            <div className="frame-aricover">
+                                                <p className="title-children">Số người tham gia: 20 người</p>
+                                            </div>
+                                            <div className="frame-aricover">
+                                                <p className="title-children">Số chỗ còn trống: 6 chỗ</p>
+                                            </div>
+                                            <div className="frame-aricover">
+                                                <p className="title-children">Thời gian dự kiến bắt đầu: 6 giờ ngày 29 tháng 3 năm 2023<br/>Thời gian kết thúc: 18 giờ ngày 31 tháng 3 năm 2023</p>
+                                            </div>
+                                            <button className="btn-aircover" onClick={() => this.handleShowHide()}>Ẩn bớt</button>
+                                        </div>
+                                    }
+                                </div>
+                                <button className="btn-bookroom"onClick={() => this.handleClickBookRoom()} >
                                     ĐẶT PHÒNG
                                 </button>
                             </div>
