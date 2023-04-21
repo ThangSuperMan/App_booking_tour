@@ -182,6 +182,7 @@
 
 .dropdown__list {
   list-style-type: none;
+  padding: 0px;
 }
 
 .dropdown__list .list__item {
@@ -215,4 +216,9 @@
   font-size: 14px;
   color: black;
   font-weight: light;
+}
+
+.list-link:hover{
+  text-decoration: none;
+  color: #FF385C;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../../Navbar";
 import "./tourdetail.scss";
+import Footer from "../../Footer/footer";
 
 class TourDetail extends React.Component{
     state = {
-        showAircover: false,
+        showAircover: false
     }
 
 
@@ -23,7 +24,7 @@ class TourDetail extends React.Component{
         return(
             <div className="tourdetail-page">
                 <Navbar></Navbar>
-                <div className="tour-main">
+                <div className="tour-main container">
                     <div className="tour-title">Biệt thự tuyệt đẹp bên rìa ĐẦM XANH</div>
                     <a className="link-address" href="https://vi.wikipedia.org/wiki/X%C3%A3_White_Lake,_Michigan">White Lake charter Township, Michigan, Hoa Kỳ</a>
                     <div className="list-picture">
@@ -65,7 +66,7 @@ class TourDetail extends React.Component{
                                 
                             </div>
                             <hr className="hr"/>
-                            <div className="tour-title4"><a className="color-red">Giới </a>thiệu về chỗ ở này</div>
+                            <div className="tour-title4"><a className="color-red">Giới thiệu</a> về chỗ ở này</div>
                             <p className="paragraph">MỚI 8/2022! Nhà nghỉ thôn dã mô tả trên ALL-SPORTS riêng, Hồ Cooley. Toàn bộ ngôi nhà là của bạn! Không gian được cải tạo gần đây và có trang trí màu cam/xanh thú vị mang lại cảm giác sôi động cho ngôi nhà nhỏ quanh năm. Một boong tuyệt đẹp với lò nướng ga nhìn ra hồ với đồ nội thất để nghỉ ngơi + tắm nắng. Tận hưởng ánh nắng mặt trời/bộ đồ lặt vặt Michigan tinh khiết. Những tháng mùa hè chúng tôi cung cấp một chiếc thuyền Pontoon (vớigiá $ thông tin tham quan)! Tháng mùa đông; tận hưởng trải nghiệm trượt băng/câu cá. Nằm gần công viên, khu mua sắm, ăn uống golf..v.v.!</p>
                         </div>
                         <div className="aircover-right">
@@ -94,7 +95,7 @@ class TourDetail extends React.Component{
                                     {showAircover &&
                                         <div className="btn-hide">
                                             <div className="frame-aricover">
-                                                <p className="title-children">H ướng dẫn viên: Nguyễn Thị Ngọc Duyên (20 tuổi)</p>
+                                                <p className="title-children">Hướng dẫn viên: Nguyễn Thị Ngọc Duyên (20 tuổi)</p>
                                             </div>
                                             <div className="frame-aricover">
                                                 <p className="title-children">Số người tham gia: 20 người</p>
@@ -115,41 +116,8 @@ class TourDetail extends React.Component{
                             </div>
                         </div>
                     </div>
-                    <hr className="hr"/>
-                    <div className="footer">
-                        <div className="frame-footer">
-                            <div className="title-footer">Hỗ trợ</div>
-                            <a>Trung tâm trợ giúp</a>
-                            <a>AriCover</a>
-                            <a>Hỗ trợ người khuyết tật</a>
-                            <a>Các tùy chọn hủy</a>
-                            <a>Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</a>
-                            <a>Báo cáo lo ngại của hàng xóm</a>
-                        </div>
-                        <div className="frame-footer">
-                            <div className="title-footer">Cộng đồng</div>
-                            <a>Airbnb: nhà ở cứu trợ</a>
-                            <a>Chống phân biệt đối xử</a>
-                        </div>
-                        <div className="frame-footer">
-                            <div className="title-footer">Đón tiếp khách</div>
-                            <a>Cho thuê nhà ở cứu trợ</a>
-                            <a>AirCover cho chủ nhà</a>
-                            <a>Xem tài nguyên đón tiếp khách</a>
-                            <a>Truy cập diễn đàn cộng đồng</a>
-                            <a>Đón tiếp khách có trách nhiệm</a>
-                        </div>
-                        <div className="frame-footer">
-                            <div className="title-footer">Airbnb</div>
-                            <a>Trang tin tức</a>
-                            <a>tìm hiểu các tính năng mới</a>
-                            <a>Thư ngỏ từ các nhà sáng lập</a>
-                            <a>Cơ hội nghề nghiệp</a>
-                            <a>Nhà đầu tư</a>
-                            <a>Thẻ quà tặng</a>
-                        </div>
-                    </div>
                 </div>
+                <Footer></Footer>
             </div>
         )
     }

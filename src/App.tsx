@@ -8,6 +8,9 @@ import { Layout } from "#components"
 import Signup from "./pages/Home/components/Navbar/SignUp/signup"
 import TourDetail from "./pages/Home/components/Tours/TourDetail/tourdetail"
 import DenyTour from "./pages/DenyTour/denytour"
+import TourRequest from "./pages/Home/components/Navbar/TourRequest/tourrequest"
+import ServiceAdmin from "./pages/Home/components/Service/servicead"
+import ConfirmTour from "./pages/ConfirmTour/confirmtour"
 
 interface RouteProps {
   path: string
@@ -26,6 +29,9 @@ const App: React.FC = () => {
           // <Route path="/signup" element={<Signup />} />; //{" "}
           <Route path="/tourdetail" element={<TourDetail />} />;
           <Route path="/denytour" element={<DenyTour />} />;
+          <Route path="/tourrequest" element={<TourRequest />} />;
+          <Route path="/servicead" element={<ServiceAdmin />} />;
+          <Route path="/confirmtour" element={<ConfirmTour />} />;
         </Routes>
       </Layout>
     </BrowserRouter>

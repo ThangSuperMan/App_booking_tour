@@ -20,7 +20,7 @@ const DropdownMenu: React.FC = () => {
       <div className="dropdown__sep"></div>
       <ul className="dropdown__list">
         <li className="list__item ">
-          <button>Cho thuê chỗ ở qua Airbnb</button>
+          <Link className="list-link" to="/tourrequest">Tour theo yêu cầu</Link>
         </li>
         <li className="list__item">
           <button>Tổ chức trải nghiệm</button>
