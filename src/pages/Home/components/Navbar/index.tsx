@@ -11,10 +11,19 @@ const DropdownMenu: React.FC = () => {
     <div className="profile__dropdown">
       <ul className="dropdown__list">
         <li className="list__item">
-          <Link className="list-link" to="/login">Đăng nhập</Link>
+          <Link className="list-link" to="/login">
+            Đăng nhập
+          </Link>
         </li>
         <li className="list__item">
-          <Link className="list-link" to="/signup">Đăng ký</Link>
+          <Link className="list-link" to="/signup">
+            Đăng ký
+          </Link>
+        </li>
+        <li className="list__item">
+          <Link className="list-link" to="/admin">
+            Admin
+          </Link>
         </li>
       </ul>
       <div className="dropdown__sep"></div>
