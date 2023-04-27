@@ -9,14 +9,14 @@ const Tours: React.FC = () => {
     <div className="tours">
       <div className="tour">
         <div className="tour__img">
-          <img src="/images/tours/tour1.webp" alt="haha" />
+          <img src="/images/tours/TourDetail/hinh1.webp" alt="haha" />
           <div className="tour__icon">
             <HeartIcon />
           </div>
         </div>
         <div className="tour-content">
           <div className="tour-content__title">
-            <Link to="/tourdetail">Balian Beach, Indonesia</Link>
+            <Link to="/tourdetail" className="text-dark td-none h5">Sơn Trà - Việt Nam</Link>
             <div className="rating">
               <StarIcon />
               <span>4.84</span>

@@ -1,0 +1,35 @@
+
+.container{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+.title{
+    margin-top: 100px;
+}
+
+.p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.img-l{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img-r1{
+    border-top-right-radius: 10px;
+}
+
+.img-r2{
+    border-bottom-right-radius: 10px;
+}
+
+.bdr{
+    border-radius: 20px;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+}

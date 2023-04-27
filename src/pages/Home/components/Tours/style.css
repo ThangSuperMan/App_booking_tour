@@ -1,4 +1,5 @@
 .tours {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   --width_per_column: 25%;
   padding-inline: 40px;
   margin-top: 16px;

@@ -6,7 +6,7 @@ import Login from "./pages/Home/components/Navbar/Login/login.js"
 // @ts-ignore
 import { Layout } from "#components"
 import Signup from "./pages/Home/components/Navbar/SignUp/signup"
-import TourDetail from "./pages/Home/components/Tours/TourDetail/tourdetail"
+import TourDetail from "./pages/Home/components/Tours/TourDetail"
 import DenyTour from "./pages/DenyTour/denytour"
 import TourRequest from "./pages/Home/components/Navbar/TourRequest/tourrequest"
 import ServiceAdmin from "./pages/Home/components/Service/servicead"

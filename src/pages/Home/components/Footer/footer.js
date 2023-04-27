@@ -6,9 +6,9 @@ class Footer extends React.Component{
 
     render(){
         return(
-            <div className="footer mt-5">
+            <div className="footer">
                 <footer className="bg-dark text-center text-white container-fluid">
-                    <div className="container p-4">
+                    <div className="container p-4 mt-5">
                         <section className="">
                             <form action="">
                                 <div className="row d-flex justify-content-center">
